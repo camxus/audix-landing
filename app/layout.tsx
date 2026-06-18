@@ -10,11 +10,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AudixMusic — Own the Music You Love",
+  title: "audix. Own the Music You Love",
   description:
-    "Trade music like stocks. Own a share of every release. AudixMusic lets you build a portfolio of the artists and releases you believe in.",
+    "Trade music like stocks. Own a share of every release. audix lets you build a portfolio of the artists and releases you believe in.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
-    title: "AudixMusic — Own the Music You Love",
+    title: "audix. Own the Music You Love",
     description: "Trade music like stocks. Own a share of every release.",
     type: "website",
   },
