@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+:root {
+  --audix-primary:         #7F77DD;
+  --audix-bg-primary:      #1C1C1E;
+  --audix-bg-secondary:    #2C2C2E;
+  --audix-bg-tertiary:     #141414;
+  --audix-text-primary:    #F0F0EE;
+  --audix-text-secondary:  #888884;
+  --audix-border:          rgba(255, 255, 255, 0.07);
+  --audix-gain:            #5DCAA5;
+  --audix-loss:            #E07A5A;
+  --audix-card-purple-bg:  rgba(127, 119, 221, 0.12);
+  --audix-card-green-bg:   rgba(29, 158, 117, 0.12);
+  --audix-card-green-icon: #5DCAA5;
+  --audix-card-amber-bg:   rgba(186, 117, 23, 0.12);
+  --audix-card-amber-icon: #D4A044;
+  --audix-card-pink-bg:    rgba(212, 83, 126, 0.12);
+  --audix-card-pink-icon:  #E47FA3;
+  --audix-card-blue-bg:    rgba(55, 138, 221, 0.12);
+  --audix-card-blue-icon:  #60A8E8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background: var(--audix-bg-tertiary);
+  color: var(--audix-text-primary);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 1025px) {
+  html,
+  body {
+    overflow: hidden;
+  }
+}
+
+.audix-seam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  background: linear-gradient(to right, #141414 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes audixGradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fadein-0 {
+  opacity: 0;
+  animation: fadeIn 500ms ease forwards;
+  animation-delay: 0ms;
+}
+
+.animate-fadein-200 {
+  opacity: 0;
+  animation: fadeIn 500ms ease forwards;
+  animation-delay: 200ms;
+}
+
+.animate-fadein-400 {
+  opacity: 0;
+  animation: fadeIn 500ms ease forwards;
+  animation-delay: 400ms;
+}
+
+.animate-fadein-600 {
+  opacity: 0;
+  animation: fadeIn 500ms ease forwards;
+  animation-delay: 600ms;
+}
+
+.animate-fadein-1000 {
+  opacity: 0;
+  animation: fadeIn 600ms ease forwards;
+  animation-delay: 1000ms;
+}
+
+/* ── Tablet (768px – 1024px) ── */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main.audix-main {
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 100vh;
+  }
+  main.audix-main > .audix-left {
+    width: 50% !important;
+    padding: 0 4% 0 5% !important;
+  }
+  main.audix-main > .audix-right {
+    width: 50% !important;
+  }
+}
+
+/* ── Mobile (< 768px) ── */
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+
+  main.audix-main {
+    flex-direction: column !important;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 100vh;
+  }
+  main.audix-main > .audix-left {
+    width: 100% !important;
+    padding: 56px 8% 40px !important;
+  }
+  main.audix-main > .audix-right {
+    width: 100% !important;
+    padding: 20px 0 60px !important;
+    height: auto !important;
+    min-height: 400px;
+    justify-content: center !important;
+  }
+
+  .audix-seam {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(to bottom, #141414 0%, transparent 100%);
+  }
+
+  /* Form stacks input + button */
+  .audix-form {
+    flex-direction: column !important;
+  }
+  .audix-form input,
+  .audix-form button {
+    width: 100% !important;
+    flex: none !important;
+  }
+
+  /* Device mockups: hide laptop, show phone only */
+  .audix-devices {
+    width: 200px !important;
+    height: 360px !important;
+    max-width: 80vw !important;
+  }
+  .audix-laptop {
+    display: none !important;
+  }
+  .audix-phone {
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Extra-narrow phones: scale down the phone mockup */
+@media (max-width: 390px) {
+  .audix-devices {
+    transform: scale(0.82);
+    transform-origin: top center;
+  }
+}
