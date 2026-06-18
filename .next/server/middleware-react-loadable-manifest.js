@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components/ShaderBackground.tsx -> @paper-design/shaders-react\":{\"id\":\"components/ShaderBackground.tsx -> @paper-design/shaders-react\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_pnpm_paper-design_shaders-react_0_0_76__types_react_18_3_31_r-10e434.js\"]}}"
