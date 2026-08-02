@@ -27,7 +27,7 @@ function AnimatedGradient() {
       style={{
         position: "absolute",
         inset: 0,
-        background:
+        backgroundImage:
           "linear-gradient(135deg, #0d0b1f 0%, #1a1540 30%, #2a2060 55%, #0d0b1f 100%)",
         backgroundSize: "300% 300%",
         animation: "audixGradientShift 10s ease infinite",
