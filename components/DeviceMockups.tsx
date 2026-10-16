@@ -254,7 +254,7 @@ export default function DeviceMockups() {
                     marginBottom: "4px",
                   }}
                 >
-                  Midnight Reverie
+                  WHEN A ROSE DIES
                 </div>
 
                 <div
@@ -264,7 +264,7 @@ export default function DeviceMockups() {
                     marginBottom: "14px",
                   }}
                 >
-                  @solaris.wav · 14,200 shares
+                  @camillusrose · 14,200 shares
                 </div>
 
                 <div style={{ display: "flex", alignItems: "center" }}>
@@ -509,17 +509,14 @@ export default function DeviceMockups() {
             style={{
               width: "40px",
               height: "40px",
-              background: "linear-gradient(135deg, #7F77DD33, #26215C)",
+              backgroundImage:
+                "url('https://i.scdn.co/image/ab67616d0000e1a3fef6b14b3c9b363a00d95ea8')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
               borderRadius: "8px",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "18px",
               border: "1px solid rgba(127,119,221,0.2)",
             }}
-          >
-            ♫
-          </div>
+          />
 
           {/* Track info */}
           <div style={{ flex: 1 }}>
@@ -530,10 +527,10 @@ export default function DeviceMockups() {
                 marginBottom: "2px",
               }}
             >
-              Midnight Reverie
-            </div>
+                WHEN A ROSE DIES
+              </div>
             <div style={{ fontSize: "10px", color: "#888884" }}>
-              @solaris.wav
+              @camillusrose
             </div>
           </div>
 
@@ -723,29 +720,26 @@ export default function DeviceMockups() {
               style={{
                 width: "100px",
                 height: "100px",
-                background: "linear-gradient(135deg, #7F77DD33, #26215C)",
+                backgroundImage:
+                  "url('https://i.scdn.co/image/ab67616d0000e1a3fef6b14b3c9b363a00d95ea8')",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
                 borderRadius: "14px",
                 margin: "0 auto 16px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "36px",
                 border: "1px solid rgba(127,119,221,0.2)",
               }}
-            >
-              ♫
-            </div>
+            />
             <div style={{ textAlign: "center" }}>
               <div
                 style={{
                   fontSize: "20px",
                   fontWeight: 300,
-                  letterSpacing: "-0.02em",
+letterSpacing: "-0.02em",
                   marginBottom: "4px",
                 }}
-              >
-                Midnight Reverie
-              </div>
+>
+              WHEN A ROSE DIES
+            </div>
               <div
                 style={{
                   fontSize: "12px",
@@ -753,7 +747,7 @@ export default function DeviceMockups() {
                   marginBottom: "14px",
                 }}
               >
-                @solaris.wav
+                @camillusrose
               </div>
               <div
                 style={{
@@ -868,7 +862,7 @@ export default function DeviceMockups() {
             </div>
             {[
               { n: "01", title: "Prelude", dur: "2:14" },
-              { n: "02", title: "Midnight Reverie", dur: "3:47" },
+              { n: "02", title: "WHEN A ROSE DIES", dur: "3:47" },
               { n: "03", title: "Dissolve", dur: "4:02" },
               { n: "04", title: "Return", dur: "3:18" },
             ].map((track) => (
@@ -925,17 +919,14 @@ export default function DeviceMockups() {
                 style={{
                   width: "44px",
                   height: "44px",
-                  background: "linear-gradient(135deg, #7F77DD33, #26215C)",
+                  backgroundImage:
+                    "url('https://i.scdn.co/image/ab67616d0000e1a3fef6b14b3c9b363a00d95ea8')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                   borderRadius: "10px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "20px",
                   border: "1px solid rgba(127,119,221,0.2)",
                 }}
-              >
-                ♫
-              </div>
+              />
 
               {/* Track info */}
               <div style={{ flex: 1 }}>
@@ -946,10 +937,10 @@ export default function DeviceMockups() {
                     marginBottom: "2px",
                   }}
                 >
-                  Midnight Reverie
+                  WHEN A ROSE DIES
                 </div>
                 <div style={{ fontSize: "10px", color: "#888884" }}>
-                  @solaris.wav
+                  @camillusrose
                 </div>
               </div>
 
